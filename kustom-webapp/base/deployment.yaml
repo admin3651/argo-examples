@@ -8,6 +8,9 @@ spec:
     matchLabels:
       app: mycontainer
   template:
+    metadata:
+      labels:
+        app: mycontainer
     spec: # Pod spec
       containers:
       - name: mycontainer
